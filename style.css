@@ -1,0 +1,567 @@
+@font-face {
+    font-family: 'josefin';
+    font-style: normal;
+    font-weight: 600;
+    src: url(res/josefin.woff);
+}
+@font-face {
+    font-family: 'josefin';
+    font-style: normal;
+    font-weight: 700;
+    src: url(res/josefin-bold.woff);
+}
+@font-face {
+    font-family: 'josefin';
+    font-style: italic;
+    font-weight: 600;
+    src: url(res/josefin-italic.woff);
+}
+
+html {
+    height: 100%;
+}
+body {
+    height: 100%;
+    margin: 0px;
+    background-color: gray;
+    overflow-x: hidden;
+}
+#header {
+    position: fixed;
+    z-index: 1;
+    transition: width 0.5s;
+}
+#logo {
+    background-image: -webkit-linear-gradient(top, #c3260c 50%, #932b19);
+    background-image: linear-gradient(to bottom, #c3260c 50%, #932b19);
+    display: inline-block;
+    text-align: center;
+    color: #e2e2e2;
+}
+#logo span {
+    line-height: 100%;    
+}
+#logo span:first-child {
+    display: block;
+    margin-bottom: 0px;
+}
+#logo span:last-child {
+    font-weight: bold;
+}
+#header>a, #page, #welcome, .datewrap>div, #team, #gallerywrap, #gallery, #gallery>div, #gallery img, #footer {
+    width: 100%;
+}
+#header>a, .float, #welcome, #side, .datewrap>div, #team>div, #footer, #footer>div, #gallerywrap, #gallerycover, .twitter-timeline {
+    box-sizing: border-box;
+    -moz-box-sizing: border-box;
+}
+#header>a {
+    display: block;
+    border-bottom: 1px solid #646464;
+    padding: 20px 25px;
+    height: 59px;
+    color: #cacaca;
+    transition-property: color;
+    transition-property: border;
+    transition-duration: 0.2s;
+    text-decoration: none;
+    background-repeat: no-repeat;
+    background-size: 20px;
+}
+#header>a:hover, #header>a.current {
+    border-bottom: 1px solid #c3260c;
+    color: #c3260c;
+}
+#header>a.logmonth {
+    padding: 5px 50px;
+    border-bottom: none;
+    height: auto;
+}
+#header>#lastmonth {
+    border-bottom: 1px solid #c3260c;
+    padding-bottom: 20px;
+}
+#page {
+    position: absolute;
+    height: 100%;
+}
+.float, #team>div, #footer>div, #gallerywrap {
+    float: left;
+}
+
+@media screen and (max-width: 779px), screen and (min-width: 1100px) {
+    #header>#navevents.current {
+        border-bottom: none;
+    }
+}
+@media screen and (min-width: 1100px) {
+    #header {
+        background-image: -webkit-linear-gradient(top, rgba(61,61,61,0.95) 60%, rgba(61,61,61,0));
+        background-image: linear-gradient(to bottom, rgba(61,61,61,0.95) 60%, rgba(61,61,61,0));
+        width: 150px;
+    }
+    #header>#navexpand {
+        display: none;
+    }
+    #welcome {
+        height: 650px;
+        padding-top: 100px;
+    }
+    #twitter {
+        height: 180px;
+        margin-bottom: 100px;
+        overflow: hidden;
+    }
+    .twitter-timeline {
+        padding-left: 10%;
+    }
+    .float {
+        width: 30%;
+    }
+    .float.two {
+        width: 60%;
+    }
+    .float:nth-child(3n+1) {
+        width: 40%;
+    }
+    .float.two:nth-child(3n+1) {
+        width: 70%;
+    }
+    .date:nth-child(3n+1), #gallerywrap {
+        padding-left: 150px;
+    }
+    .info:nth-child(3n+1), #team, #footer {
+        padding-left: 180px;
+    }
+    .info {
+        padding: 2%;
+    }
+    #gallerywrap {
+        padding-right: 30%;
+    }
+    #gallerywrap>a {
+        width: 6%;
+    }
+    #galleryleft { 
+        left: 0px;
+    }
+    #gallerycover {
+        width: 30%;
+        height: 100%;
+        padding: 3%;
+        background-color: rgba(239, 239, 239, 0.8);
+    }
+    #gallerycover>a {
+        width: 50%;
+        height: 15%;
+    }
+    #team>div, #footer>div {
+        width: 33%;
+    }
+}
+@media screen and (min-width: 780px) {
+    #header {
+        height: 100%;
+    }
+    #header>a {
+        background-position: 18px 18px, 18px 60px;
+    }
+    #header>a>span {
+        margin-left: 25px;
+    }
+    #header>a:hover, #header>a.current {
+        background-position: 18px 60px, 18px 18px;
+    }
+    #logo {
+        height: 150px;
+        width: 100%;
+    }
+    #logo>div {
+        margin-top: 52px;
+    }
+    #logo span:first-child {
+        font-size: 14px;
+    }
+    #logo span:last-child {
+        font-size: 32px;
+    }
+    .info {
+        height: 340px;
+    }
+    .date {
+        height: 500px;
+    }
+    #fieldvideo>video {
+        height: 100%;
+    }
+}
+@media screen and (min-width: 780px) and (max-width: 1099px) {
+    #header {
+        background-image: -webkit-linear-gradient(top, rgba(61,61,61,0.95) 60%, rgba(61,61,61,0.3));
+        background-image: linear-gradient(to bottom, rgba(61,61,61,0.95) 60%, rgba(61,61,61,0.3));
+        width: 70px;
+    }
+    #header.expand {
+        width: 150px;
+    }
+    #logo>div {
+        position: absolute;
+        -webkit-transition: -webkit-transform 0.5s;
+        -webkit-transform: rotate(-90deg) translateY(-25px);
+        transition: transform 0.5s;
+        transform: rotate(-90deg) translateY(-25px);
+    }
+    #header>a>span {
+        display: none;
+    }
+    #header>a.logmonth {
+        display: none;
+    }
+    #header.expand>#navevents.current {
+        border-bottom: none;
+    }
+    #header.expand>a>span {
+        display: inline;
+    }
+    #header.expand>#logo>div {
+        -webkit-transform: translateX(12px);
+        transform: translateX(12px);
+    }
+    #header.expand>a.logmonth {
+        display: block;
+    }
+    #welcome {
+        height: 500px;
+        padding-top: 80px;
+    }
+    .float:nth-child(2n) {
+        width: 45%;
+    }
+    .float:nth-child(2n+1) {
+        width: 55%;
+    }
+    .float.two {
+        width: 100%;
+    }
+    .date:nth-child(2n+1), #gallerywrap {
+        padding-left: 70px;
+    }
+    .info:nth-child(2n+1), #team, #footer, #gallerycover {
+        padding-left: 100px;
+    }
+    .info {
+        padding: 4%;
+    }
+    .float.lastodd {
+        width: 100%;
+        height: auto;
+    }
+    #gallerywrap>a {
+        width: 10%;
+    }
+    #gallerycover {
+        padding-top: 4%;
+    }
+    #team>div, #footer>div {
+        width: 50%;
+    }
+}
+@media screen and (max-width: 1099px) {
+    #side {
+        display: none;
+    }
+    #gallerycover {
+        width: 100%;
+        height: 15%;
+        background-color: rgba(239, 239, 239, 0.5);
+    }
+    #gallerycover>a {
+        width: 20%;
+        height: 100%;
+    }
+    #galleryleft {
+        right: 20%;
+    }
+}
+@media screen and (max-width: 779px) {
+    #header {
+        background-color: rgba(61,61,61,0.95);
+        transition: height 0.5s;
+        overflow: hidden;
+    }
+    #header, #logo, #header>#navexpand {
+        height: 45px;
+    }
+    #header.expand {
+        background-color: transparent;
+        background-image: -webkit-linear-gradient(top, rgba(61,61,61,0.95) 60%, rgba(61,61,61,0.7));
+        background-image: linear-gradient(to bottom, rgba(61,61,61,0.95) 60%, rgba(61,61,61,0.7));
+        height: 100%;
+    }
+    #header, .float, #team>div, #footer>div {
+        width: 100%;
+    }
+    #logo {
+        width: 70%;
+        float: left;
+    }
+    #logo>div {
+        margin-top: 8px;
+    }
+    #logo span:first-child {
+        font-size: 12px;
+    }
+    #logo span:last-child {
+        font-size: 21px;
+    }
+    #header>#navexpand {
+        width: 30%;
+        float: left;
+        background-position: 50% 50%, 50% 69px;
+        background-size: 20px;
+    }
+    #header>#navrobot {
+        margin-top: 50px;
+    }
+    #header>a {
+        background-position: 50px 18px, 50px 60px;
+        text-align: center;
+    }
+    #header>a:hover, #header>a.current {
+        background-position: 50px 60px, 50px 18px;
+    }
+    #page {
+        padding-top: 45px;
+    }
+    #welcome {
+        height: 350px;
+        padding-top: 50px;
+    }
+    .date {
+        height: 450px;
+    }
+    .info, #team, #footer {
+        padding: 6%;
+    }
+    #gallerycover {
+        padding: 4%;
+    }
+    #gallerywrap>a {
+        width: 15%;
+    }
+    #fieldvideo>video {
+        width: 100%;
+    }
+}
+
+#welcome {
+    background-size: cover;
+    background-position: center;
+    padding-left: 20%;
+}
+#side {
+    background-image: -webkit-linear-gradient(top, rgba(239, 239, 239, 0.5), rgba(239, 239, 239, 0.95) 40%);
+    background-image: linear-gradient(to bottom, rgba(239, 239, 239, 0.5), rgba(239, 239, 239, 0.95) 40%);
+    position: absolute;
+    height: 650px;
+    width: 30%;
+    right: 0px;
+    top: 0px;
+    color: #434343;
+    padding: 2%;
+}
+.date {
+    overflow: hidden;
+}
+.datewrap {
+    position: relative;
+    height: 100%;
+}
+.datewrap>div {
+    position: absolute;
+    height: 100%;
+    padding: 10%;
+    transition: top 0.5s;
+}
+.cover {
+    cursor: pointer;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: 50% 50%, 50% 50%;
+    font-size: 48px;
+    font-family: josefin;
+}
+.date:nth-child(2n) .cover {
+    background-size: 80%;
+}
+#welcome, .cover {
+    color: #e2e2e2;
+    text-shadow: #434343 1px 1px 2px;
+}
+#welcome span, .cover>span {
+    font-family: inherit;
+    font-weight: bold;
+    color: #c3260c;
+}
+.cover:hover {
+    background-position: 50% 500px, 50% 50%;
+}
+.entry {
+    overflow-y: auto;
+}
+.black {
+    background-color: #171717;
+    color: #cacaca;
+}
+.float.black>h2, #team>h2 {
+    text-shadow: none;
+}
+.white {
+    background-color: #efefef;
+    color: #434343;
+}
+.gray {
+    background-color: #a8a8a8;
+    background-image: url(res/shattered.png);
+    background-repeat: repeat;
+    color: #171717;
+}
+.lightgray {
+    background-color: #ddd;
+    background-image: url(res/subtlenet2.png);
+    background-repeat: repeat;
+    color: #393939;
+}
+h1, h2, p, a, span {
+    font-family: josefin;
+    color: inherit;
+}
+h1 {
+    font-weight: normal;
+    font-size: 52px;
+}
+h2 {
+    font-size: 26px;
+}
+.float>h2, #gallerycover {
+    color: #c3260c;
+    text-shadow: gray 1px 1px 1px;
+}
+a, p {
+    font-size: 18px;
+}
+a:hover {
+    color: #c3260c;
+}
+p {
+    line-height: 150%;
+}
+p, h1, h2 {
+    margin-top: 0px;
+    margin-bottom: 20px;
+}
+iframe {
+    width: 100%;
+    height: 100%;
+    border: none;
+}
+#fieldvideo {
+    text-align: center;
+}
+#team {
+    padding-top: 2%;
+    background-color: #434343;
+    color: #cacaca;
+}
+#team>div {
+    height: 150px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    padding-left: 180px;
+    margin-bottom: 30px;
+}
+#team>div>span, #footer>div>span {
+    display: block;
+    font-weight: bold;
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+#team>div>p, #footer>div>p {
+    margin-bottom: 0px;
+}
+#gallerywrap {
+    position: relative;
+    overflow: hidden;
+}
+#gallerywrap>div>*, #gallerycover {
+    position: absolute;
+}
+#gallery {
+    height: 100%;
+    position: relative;
+    overflow: visible;
+}
+#gallerycover>a {
+    display: block;
+    bottom: 0px;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: 15%;
+}
+#galleryleft {
+    background-image: url(res/left.png);
+    background-color: rgba(239,239,239,0.4);
+}
+#galleryleft:hover {
+    background-image: url(res/left.png);
+    background-color: rgba(239,239,239,0.7);
+}
+#galleryright {
+    background-image: url(res/right.png);
+    background-color: rgba(239,239,239,0.7);
+    right: 0px;
+}
+#galleryright:hover {
+    background-image: url(res/right.png);
+    background-color: #efefef;
+}
+#gallerycover {
+    display: inline;
+    right: 0px;
+    top: 0px;
+}
+#gallery>div {
+    height: 100%;
+    transition: left 0.5s;
+    overflow: hidden;
+}
+#gallery p {
+    position: absolute;
+    width: 67%;
+    bottom: 0px;
+    right: 0px;
+    margin: 0px;
+    padding: 2%;
+    font-size: 26px;
+    background-image: -webkit-linear-gradient(left, rgba(239,239,239,0), rgba(239,239,239,0.6), rgba(239,239,239,0));
+    background-image: linear-gradient(to right, rgba(239,239,239,0), rgba(239,239,239,0.6), rgba(239,239,239,0));
+    text-align: center;
+}
+#footer {
+    display: inline-block;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+#footer>div {
+    margin-bottom: 20px;
+}
+#twitterlogo {
+    display: block;
+    padding: 12px 50px;
+    background-size: 40px;
+    background-repeat: no-repeat;
+    text-decoration: none;
+}
+#twitterlogo:hover {
+    background-position: 0px 42px, 0px, 0px;
+}

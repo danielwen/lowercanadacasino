@@ -1,0 +1,97 @@
+<!doctype html>
+<html><head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Le jeu - Lower Canada Casino</title>
+        <link rel="icon" type="image/png" href="../res/favicon.png">
+<link rel="stylesheet" type="text/css" href="../style.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><style type="text/css"></style>
+<script src="../main.js"></script>    </head>
+    <body style="">
+        <div id="header">
+    <div id="logo">
+        <div>
+        <span>LOWER CANADA</span>
+        <span>CASINO</span>
+        </div>
+    </div>
+    <a id="navexpand" style="cursor:pointer; background-image:url('../res/expand1.png'), url('../res/expand2.png')"></a>
+    <a id="navrobot" href="../fr/" style="background-image:url('../res/gear1.png'), url('../res/gear2.png')"><span>Le robot</span></a>
+    <a id="navgame" href="jeu.html" style="background-image:url('../res/dice1.png'), url('../res/dice2.png')" class="current"><span>Le jeu</span></a>
+    <a id="navevents" href="journal.html" style="background-image:url('../res/cal1.png'), url('../res/cal2.png')"><span>Journal</span></a>
+    <a id="navabout" href="apropos.html" style="background-image:url('../res/about1.png'), url('../res/about2.png')"><span>À propos</span></a>
+    <a style="background-image:url('../res/fr1.png'), url('../res/fr2.png')" href="../en/"><span>English</span></a>
+</div>
+<script>
+if (window.innerWidth < 1100 && window.innerWidth >= 780)
+    $("#header").addClass("expand");
+</script>        <div id="page">
+            <div id="welcome" style="background-image:url('../res/game.jpg');">
+                <h1>Entrez dans <br>le <span>jeu</span></h1>
+            </div>
+            <div id="side">
+                <div id="twitter">
+                <h2>Nouvelles</h2>
+<a class="twitter-timeline" data-dnt="true" data-tweet-limit="1" data-chrome="noheader nofooter noborders transparent" href="https://twitter.com/LCCRobotics2014" data-widget-id="419567328842354688">Tweets par @LCCRobotics2014</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                </div>
+                <div id="overview">
+                <h2>Aperçu</h2>
+                <p>La compétition est appelé Nemolition</p>
+                <p>Il aura lieu du 20 au 22 février au Cégep Vanier</p>
+                <p>Le but du jeu est d'accumuler le plus de points possible en construisant des structures en équipe de cinq.</p>
+                </div>
+            </div>
+            <div id="floats">
+            <div class="float info lightgray">
+                <h2>Pièces de jeu</h2>
+                <p>
+Les objets donnés pour la construction sont des prismes en mousse, des sceaux remplis de béton et des ballons de plage. Les pièces fournies sont distribuées parmi les trois étages du terrain de jeu. De plus, chaque équipe peut précharger une pièce de leur choix dans leur robot.
+                </p>
+            </div>
+            <div class="float info gray">
+                <h2>Pointage</h2>
+                <p>
+Les points sont calculés en considérant trois facteurs: quelles pièces sont incluses, l'ordre dans lequel elles sont placées et sur quel niveau du terrain la structure est construise dessus.
+                </p>
+            </div>
+            <div class="float info black">
+                <h2>Ressources</h2>
+                <p><a target="_blank" href="http://www.robo-crc.ca/fr/">Site web Robo-CRC</a></p>
+                <p>
+                <a target="_blank" href="http://www.robo-crc.ca/wp-content/uploads/2013/11/2014_NemolitionRules_FR_VF_REV1.pdf">Livret de règlements</a>
+                </p>
+                <p><a target="_blank" href="../res/diagram.pdf">Schéma du terrain de jeu</a></p>
+            </div>
+            <div class="float lastodd info white">
+                <h2>Terrain de jeu</h2>
+                <p>
+Le terrain de jeu est une construction à trois étages liés par des rampes fixes et mobile. Les 5 zones de départ sont situées sur le premier étage, où il y a les prismes en mousse. Les seaux de béton et la rampe d'accès se trouvent sur le deuxième étage. Sur le troisième, il y a les ballons de plage.
+                </p>
+            </div>
+            <div id="fieldvideo" class="float two info lightgray">
+                <video loop="" controls="">
+                    <source src="../res/field.ogg" type="video/ogg">
+                    <source src="../res/field.mp4" type="video/mp4">
+                </video>
+            </div>
+            </div>
+            <div id="footer" class="black">
+    <div>
+        <span>Se connecter</span>
+        <a id="twitterlogo" target="_blank" href="http://twitter.com/LCCRobotics2014" style="background-image:url(../res/twitter1.png),url(../res/twitter2.png)">Twitter</a>
+    </div>
+    <div>
+        <span>À propos du site web</span>
+        <p>HTML5 (<a target="_blank" href="http://validator.w3.org/check?uri=referer">valider</a>)</p>
+        <p>CSS3 (<a target="_blank" href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Flowercanadacasino.ca%2Fstyle.css">valider</a>) (<a target="_blank" href="../style.css">code source</a>)</p>
+        <p>jQuery JavaScript (<a target="_blank" href="../main.js">code source</a>)</p>
+        <p>S'adapte à la taille de l'écran</p>
+    </div>
+    <div id="signature">
+        <span>Crée par</span>
+        <p><a target="_blank" href="https://lane-widen.com/">Daniel Wen</a></p>
+    </div>
+</div>        </div>
+    
+</body></html>

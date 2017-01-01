@@ -1,0 +1,108 @@
+<!doctype html>
+<html><head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0">
+        <title>Le robot - Lower Canada Casino</title>
+        <link rel="icon" type="image/png" href="../res/favicon.png">
+<link rel="stylesheet" type="text/css" href="../style.css">
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.0.3/jquery.min.js"></script><style type="text/css"></style>
+<script src="../main.js"></script>    </head>
+    <body style="">
+        <div id="header">
+    <div id="logo">
+        <div>
+        <span>LOWER CANADA</span>
+        <span>CASINO</span>
+        </div>
+    </div>
+    <a id="navexpand" style="cursor:pointer; background-image:url('../res/expand1.png'), url('../res/expand2.png')"></a>
+    <a id="navrobot" href="../fr/" style="background-image:url('../res/gear1.png'), url('../res/gear2.png')" class="current"><span>Le robot</span></a>
+    <a id="navgame" href="jeu.html" style="background-image:url('../res/dice1.png'), url('../res/dice2.png')"><span>Le jeu</span></a>
+    <a id="navevents" href="journal.html" style="background-image:url('../res/cal1.png'), url('../res/cal2.png')"><span>Journal</span></a>
+    <a id="navabout" href="apropos.html" style="background-image:url('../res/about1.png'), url('../res/about2.png')"><span>À propos</span></a>
+    <a style="background-image:url('../res/fr1.png'), url('../res/fr2.png')" href="../en/"><span>English</span></a>
+</div>
+<script>
+if (window.innerWidth < 1100 && window.innerWidth >= 780)
+    $("#header").addClass("expand");
+</script>        <div id="page">
+            <div id="welcome" style="background-image:url('../res/machine.jpg');">
+                <h1>L'<span>engin</span><br>du gain</h1>
+            </div>
+            <div id="side">
+                <div id="twitter">
+                <h2>Nouvelles</h2>
+<a class="twitter-timeline" data-dnt="true" data-tweet-limit="1" data-chrome="noheader nofooter noborders transparent" href="https://twitter.com/LCCRobotics2014" data-widget-id="419567328842354688">Tweets par @LCCRobotics2014</a>
+<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                </div>
+                <div id="overview">
+                <h2>Aperçu</h2>
+                <p>Notre robot comprend trois composants majeurs:</p>
+                <p>La base fait déplacer le robot</p>
+                <p>La pince ramasse ou dépose les pièces de jeu</p>
+                <p>L'ascenseur fait monter ou descendre la pince</p>
+                </div>
+            </div>
+            <div id="floats">
+            <div class="float info lightgray">
+                <h2>Base</h2>
+                <p>
+Deux moteurs de perceuses font tourner quatre roues sous une base de 45 cm par 48 cm. Les roues tournent simultanément grâce à un mécanisme de pignon et de chaine. La traction à quatre roues aide à remonter les rampes.
+                </p>
+            </div>
+            <div class="float info gray">
+                <h2>Pince</h2>
+                <p>
+La pince est surtout en aluminium, avec du caoutchouc pour plus d'adhérence. Il s'ouvre et se ferme à l'aide d'un moteur. Il peut soulever 1.5 kg avec aise. 
+                </p>
+            </div>
+            <div class="float info black">
+                <h2>Ascenseur</h2>
+                <p>
+La porte-pince monte et descend en glissant sur des poteaux en aluminium à l'aide de poulies. L'ascenseur est mis en marche par un moteur attaché à la base. Un bas centre de gravité contribue à la stabilité sur une rampe.
+                </p>
+            </div>
+            <div id="gallerywrap">
+                <div id="gallery">
+                    <div style="left:-100%">
+                        <p>Ascenseur</p>
+                        <img alt="ascenseur robot" src="../gallery/gallery3.jpg">
+                    </div>
+                    <div style="left:0%">
+                        <iframe src="http://www.youtube.com/embed/Ecd0p5L433M?wmode=transparent" allowfullscreen=""></iframe>
+                    </div>
+                    <div style="left:100%">
+                        <p>Base</p>
+                        <img alt="base robot" src="../gallery/gallery1.jpg">
+                    </div>
+                    <div style="left:200%">
+                        <p>Pince</p>
+                        <img alt="pince robot" src="../gallery/gallery2.jpg">
+                    </div>
+                </div>
+                <div id="gallerycover">
+                    <h2>Galerie</h2>
+                    <a id="galleryleft" href="#"></a>
+                    <a id="galleryright" href="#"></a>
+                </div>
+            </div>
+            </div>
+            <div id="footer" class="black">
+    <div>
+        <span>Se connecter</span>
+        <a id="twitterlogo" target="_blank" href="http://twitter.com/LCCRobotics2014" style="background-image:url(../res/twitter1.png),url(../res/twitter2.png)">Twitter</a>
+    </div>
+    <div>
+        <span>À propos du site web</span>
+        <p>HTML5 (<a target="_blank" href="http://validator.w3.org/check?uri=referer">valider</a>)</p>
+        <p>CSS3 (<a target="_blank" href="http://jigsaw.w3.org/css-validator/validator?uri=http%3A%2F%2Flowercanadacasino.ca%2Fstyle.css">valider</a>) (<a target="_blank" href="../style.css">code source</a>)</p>
+        <p>jQuery JavaScript (<a target="_blank" href="../main.js">code source</a>)</p>
+        <p>S'adapte à la taille de l'écran</p>
+    </div>
+    <div id="signature">
+        <span>Crée par</span>
+        <p><a target="_blank" href="https://lane-widen.com/">Daniel Wen</a></p>
+    </div>
+</div>        </div>
+    
+</body></html>
